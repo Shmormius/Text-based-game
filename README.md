@@ -1,3 +1,3 @@
-# This is a text-based game made for practice.
+## This is a text-based game made for practice.
 
-# Author: Shmormius
+## Author: Shmormius
