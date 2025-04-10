@@ -1,8 +1,10 @@
 package com.shmormius.entity;
 
 public class GameEntity {
+    final private double MAX_HEALTH = 1000;
     
     private double health;
+    private double maxHealth;
     private String name;
     private EntityStatus status;
     private StatValue power;
@@ -14,6 +16,8 @@ public class GameEntity {
     
     public GameEntity(){
         health = 100.0;
+        maxHealth = health;
+
         name = "No Name";
         status = EntityStatus.ALIVE;
         power = StatValue.E;
@@ -69,6 +73,22 @@ public class GameEntity {
 
         if(health <= 0){
             setStatus(EntityStatus.DEAD);
+        }
+    }
+
+    public void increaseMaxHealth(double increaseAmount){
+        maxHealth = maxHealth + increaseAmount;
+
+        if(maxHealth > MAX_HEALTH){
+            maxHealth = MAX_HEALTH;
+        }
+    }
+
+    public void heal(double amountToHeal){
+        health = health + amountToHeal;
+
+        if(health > maxHealth){
+            health = maxHealth;
         }
     }
 }
