@@ -1,5 +1,5 @@
 package com.shmormius.entity;
 
-public class Enemy extends Entity{
+public class Enemy extends GameEntity{
     
 }
