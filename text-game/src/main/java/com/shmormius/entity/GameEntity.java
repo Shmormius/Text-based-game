@@ -59,4 +59,16 @@ public class GameEntity {
     public StatValue getDurability(){
         return durability;
     }
+
+    private void setStatus(EntityStatus newStatus){
+        status = newStatus;
+    }
+
+    public void takeDamage(double damageAmount){
+        health = health - damageAmount;
+
+        if(health <= 0){
+            setStatus(EntityStatus.DEAD);
+        }
+    }
 }

@@ -19,4 +19,12 @@ public class EntityTest {
         assertEquals(newEntity.getPower(), StatValue.E);
         assertEquals(newEntity.getDurability(), StatValue.E);
     }
+
+    @Test
+    public void killDefaultEntity(){
+        newEntity.takeDamage(100);
+
+        assertEquals(newEntity.getStatus(),EntityStatus.DEAD);
+        assertEquals(newEntity.getHealthValue(), 0);
+    }
 }
