@@ -21,5 +21,6 @@ public class PlayerTest {
         assertEquals(playerDefault.getStandName(), "No Name");
         assertEquals(playerDefault.getStandAbility().toString(), "No Special Ability");
         assertEquals(playerDefault.getInventory().getBurden(), 0);
+        assertEquals(playerDefault.getMoneyValue(), 10);
     }
 }
