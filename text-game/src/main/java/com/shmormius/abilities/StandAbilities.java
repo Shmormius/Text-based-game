@@ -1,4 +1,4 @@
-package com.shmormius.entity;
+package com.shmormius.abilities;
 
 public class StandAbilities {
 
