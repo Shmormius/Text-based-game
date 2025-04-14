@@ -64,6 +64,30 @@ public class GameEntity {
         return durability;
     }
 
+    public void setPower(StatValue power){
+        this.power = power;
+    }
+
+    public void setRange(StatValue range){
+        this.range = range;
+    }
+
+    public void setPrecision(StatValue precision){
+        this.precision = precision;
+    }
+
+    public void setPotential(StatValue potential){
+        this.potential = potential;
+    }
+
+    public void setSpeed(StatValue speed){
+        this.speed = speed;
+    }
+
+    public void setDurability(StatValue durability){
+        this.durability = durability;
+    }
+
     private void setStatus(EntityStatus newStatus){
         status = newStatus;
     }

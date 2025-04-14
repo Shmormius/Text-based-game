@@ -68,4 +68,46 @@ public class EntityTest {
         
         assertEquals(newEntity.getHealthValue(), 1000);
     }
+
+    @Test
+    public void testSetPower(){
+        newEntity.setPower(StatValue.A);
+        
+        assertEquals(newEntity.getPower(), StatValue.A);
+    }
+
+    @Test
+    public void testSetSpeed(){
+        newEntity.setSpeed(StatValue.A);
+        
+        assertEquals(newEntity.getSpeed(), StatValue.A);
+    }
+
+    @Test
+    public void testSetPotential(){
+        newEntity.setPotential(StatValue.A);
+        
+        assertEquals(newEntity.getPotential(), StatValue.A);
+    }
+
+    @Test
+    public void testSetDurability(){
+        newEntity.setDurability(StatValue.A);
+        
+        assertEquals(newEntity.getDurability(), StatValue.A);
+    }
+
+    @Test
+    public void testSetRange(){
+        newEntity.setRange(StatValue.A);
+        
+        assertEquals(newEntity.getRange(), StatValue.A);
+    }
+
+    @Test
+    public void testSetPrecision(){
+        newEntity.setPrecision(StatValue.A);
+        
+        assertEquals(newEntity.getPrecision(), StatValue.A);
+    }
 }
